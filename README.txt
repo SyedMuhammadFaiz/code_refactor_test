@@ -1,45 +1,40 @@
-Do at least ONE of the following tasks: refactor is mandatory. Write tests is optional, will be good bonus to see it. 
-Please do not invest more than 2-4 hours on this.
-Upload your results to a Github repo, for easier sharing and reviewing.
-
-Thank you and good luck!
-
-
-
-Code to refactor
+Code refactored (just some steps)
 =================
 1) app/Http/Controllers/BookingController.php
 2) app/Repository/BookingRepository.php
 
-Code to write tests (optional)
-=====================
-3) App/Helpers/TeHelper.php method willExpireAt
-4) App/Repository/UserRepository.php, method createOrUpdate
 
+X. Your thoughts about the code.
 
-----------------------------
+1) What makes it amazing code. Or what makes it ok code. Or what makes it terrible code?
 
-What I expect in your repo:
+    - I'll classify it as terrible code. Less formatting, Unstructured, Not using modern day standards 
+    - framework functionalities almost not using at all which makes it harder to manage and update in fact I saw raw curl request instead HttpClient
+    - Not using PSR as well 
 
-X. A readme with:   Your thoughts about the code. What makes it amazing code. Or what makes it ok code. Or what makes it terrible code. How would you have done it. Thoughts on formatting, structure, logic.. The more details that you can provide about the code (what's terrible about it or/and what is good about it) the easier for us to assess your coding style, mentality etc
+2) How would you have done it?
 
-And 
+    - Try to break it in many classes to implement Single Responsibility Principle 
+    - Use Framework (I assume laravel) functionalities to make it easier to understand, maintain and upgrade with efficiency 
 
-Y.  Refactor it if you feel it needs refactoring. The more love you put into it. The easier for us to asses your thoughts, code principles etc
+3) Thoughts on formatting, structure, logic.. The more details that you can provide about the code (what's terrible about it or/and what is good about it) the easier for us to assess your coding style, mentality etc
 
+    It will be time taking task to refactor all the code base. I assume that I am working on this project to refactor it I'll implement:
+        i)      Mailables
+        ii)     Services
+        iii)    Observers
+        iv)     Middleware
+        v)      Authorization
+        vi)     Validation
+        vii)    Exception Handling
+        viii)   Interfaces
+        ix)     Jobs and Queues
+        x)      SOLID Principle
+        xi)     Database Optimization (if required)
+        xii)    Security (assume it'll be required)
+        xiii)   API resources to transform responses with unified format to make it easy for Cross platform integration
+        xiv)    Test Cases
+        xv)     Roles and Permission (it is essential to reduce manually check conditions in each and every action)
+        xvi)    In many occasions logics are too much complex which may become simpler to implent KISS (Keep it simple, stupid) principle
 
-IMPORTANT: Make two commits. First commit with original code. Second with your refactor so we can easily trace changes. 
-
-
-NB: you do not need to set up the code on local and make the web app run. It will not run as its not a complete web app. This is purely to assess you thoughts about code, formatting, logic etc
-
-
-===== So expected output is a GitHub link with either =====
-
-1. Readme described above (point X above) + refactored code 
-OR
-2. Readme described above (point X above) + refactored core + a unit test of the code that we have sent
-
-Thank you!
-
-
+And perhaps more as per requirement.
